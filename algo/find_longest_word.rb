@@ -1,10 +1,13 @@
 # Complete the method called find_longest_word, which will accept a string as a parameter (usually a sentence), and return another string that will be the longest word in that sentence.
 
 def find_longest_word(sentence)
-
+  sentence_to_array = sentence.split
+  
+  sentence_to_array.sort_by!{|str| str.length}.reverse!
+  longest_word = sentence_to_array[0]
+  longest_word
 end
 
-# Driver code - don't touch anything below this line.
 puts "TESTING find_longest_word..."
 puts
 
