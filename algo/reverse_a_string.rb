@@ -2,8 +2,18 @@
 # returns the reverse. The one caveat: Don't use the reverse method that already
 # comes with Ruby!
 
-def reverse_a_string(string)
 
+
+def reverse_a_string(string)
+  new_array = []
+  
+  string_to_array = string.chars
+  string_length = string_to_array.length 
+  
+  string_length.times do 
+    new_array << string_to_array.pop
+  end
+  new_array.join("")
 end
 
 # Driver code - don't touch anything below this line.
